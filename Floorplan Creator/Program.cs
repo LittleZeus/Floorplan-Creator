@@ -163,7 +163,7 @@ namespace Floorplan_Creator
 
         static void Main()
         {
-            string file = "C:/Users/Ben/Documents/Visual Studio 2015/Projects/Floorplan Creator/Floorplan Creator/bin/Debug/CoordData.txt";
+            string file = "CoordData.txt";
             int[,] walkCoords = RemoveRepeats(RoundCoords(SmoothPath(ReadCoords(file))));
             //Debug.WriteLine(walkCoords[1,0]);
             Bitmap floorplan = FloorDraw.CreateFloor(walkCoords);
